@@ -1,5 +1,8 @@
-mkdir backend && cd backend '<br />'
-npm init -y '<br />'
+mkdir backend && cd backend <br />
+
+```bash
+npm init -y
+```
 
 ```bash
 npx create-react-app frontend
