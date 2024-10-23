@@ -27,20 +27,21 @@ const ItemList = () => {
     };
 
     return (
-        <div>
-            <h1>Item List</h1>
+        <div className='m-3 p-2 bg-slate-200 w-80'>
+            <h1 className='text-2xl font-bold'>Item List</h1>
             <input
                 type="text"
                 value={newItem}
                 onChange={(e) => setNewItem(e.target.value)}
+                className='h-8'
             />
-            <button onClick={addItem}>Add Item</button>
+            <button onClick={addItem} className='bg-green-400 p-1 ml-2'>Add Item</button>
 
-            <ul>
+            <ul className='py-2 pr-10'>
                 {items.map(item => (
-                    <li key={item._id}>
+                    <li key={item._id} className='border-2 border-b border-white-500'>
                         {item.name}
-                        <button onClick={() => deleteItem(item._id)}>Delete</button>
+                        <button onClick={() => deleteItem(item._id)} className='bg-red-400 p-1 ml-2'>Delete</button>
                     </li>
                 ))}
             </ul>

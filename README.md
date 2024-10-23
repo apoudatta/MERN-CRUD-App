@@ -20,3 +20,10 @@ In the frontend folder, run the React app:
 ```bash
 npm start
 ```
+
+In the frontend folder, install tailwindcss-
+
+```bash
+npm install -D tailwindcss
+npx tailwindcss init
+```
